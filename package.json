@@ -1,0 +1,17 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "server": "live-server",
+    "dev": "yarn server && yarn compile:sass"
+  },
+  "repository": "git@bitbucket.org:dschmid/natours.git",
+  "author": "Daniel Schmid <daniel.schmid@libertymail.net>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
