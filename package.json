@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "kss": "kss --config kss-config.json"
+    "sass": "node-sass sass/main.scss css/style.css",
+    "kss": "kss --config kss-config.json"  ,
+    "stylelint": "stylelint 'sass/**/*.scss'",
+    "dev": "yarn sass && yarn stylelint && yarn kss",
+    "watch": "onchange 'sass/**/*.scss' -- yarn dev"
   },
   "repository": "git@bitbucket.org:dschmid/natours.git",
   "author": "Daniel Schmid <daniel.schmid@libertymail.net>",
@@ -13,6 +16,9 @@
   "devDependencies": {
     "kss": "^3.0.0-beta.18",
     "michelangelo": "^0.7.0",
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.7.2",
+    "onchange": "^3.3.0",
+    "stylelint": "^9.1.3",
+    "stylelint-config-sass-guidelines": "^5.0.0"
   }
 }

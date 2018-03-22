@@ -20,9 +20,9 @@ $color-white: #fff;
 *,
 *::after,
 *::before {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
