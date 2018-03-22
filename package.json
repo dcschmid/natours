@@ -4,14 +4,15 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "server": "live-server",
-    "dev": "yarn server && yarn compile:sass"
+    "kss": "kss --config kss-config.json"
   },
   "repository": "git@bitbucket.org:dschmid/natours.git",
   "author": "Daniel Schmid <daniel.schmid@libertymail.net>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "kss": "^3.0.0-beta.18",
+    "michelangelo": "^0.7.0",
     "node-sass": "^4.7.2"
   }
 }
