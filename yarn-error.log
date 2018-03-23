@@ -21,8 +21,8 @@ npm manifest:
     "scripts": {
       "sass": "node-sass sass/main.scss css/style.css",
       "kss": "kss --config kss-config.json"  ,
-      "stylelint": "stylelint 'sass/**/*.scss'",
-      "dev": "yarn sass && yarn stylelint && yarn kss",
+      "stylelint": "stylelint 'sass/**/*.scss'; exit 0;",
+      "dev": "yarn sass && yarn kss && yarn stylelint",
       "watch": "onchange 'sass/**/*.scss' -- yarn dev"
     },
     "repository": "git@bitbucket.org:dschmid/natours.git",
@@ -2882,7 +2882,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c yarn sass && yarn stylelint && yarn kss
+  Arguments: -c yarn sass && yarn kss && yarn stylelint
   Directory: /data/websites/natours
   Output:
   
