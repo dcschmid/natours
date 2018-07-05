@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass sass/main.scss css/style.css",
-    "kss": "kss --config kss-config.json"  ,
+    "kss": "kss --config kss-config.json",
     "stylelint": "stylelint 'sass/**/*.scss'; exit 0;",
     "dev": "yarn sass && yarn kss && yarn stylelint",
     "watch": "onchange 'sass/**/*.scss' -- yarn dev"
