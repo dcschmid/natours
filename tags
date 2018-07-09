@@ -25,6 +25,11 @@ card	css/style.css	/^  .card:hover .card__side--back {$/;"	c	language:css
 card	css/style.css	/^  .card:hover .card__side--front {$/;"	c	language:css
 card	css/style.css	/^.card {$/;"	c	language:css
 card	sass/components/_card.scss	/^.card {$/;"	c	language:scss
+card__heading	css/style.css	/^  .card__heading {$/;"	c	language:css
+card__picture	css/style.css	/^  .card__picture {$/;"	c	language:css
+card__picture--1	css/style.css	/^    .card__picture--1 {$/;"	c	language:css
+card__picture--2	css/style.css	/^    .card__picture--2 {$/;"	c	language:css
+card__picture--3	css/style.css	/^    .card__picture--3 {$/;"	c	language:css
 card__side	css/style.css	/^  .card__side {$/;"	c	language:css
 card__side--back	css/style.css	/^    .card__side--back {$/;"	c	language:css
 card__side--back-1	css/style.css	/^      .card__side--back-1 {$/;"	c	language:css
