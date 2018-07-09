@@ -25,7 +25,13 @@ card	css/style.css	/^  .card:hover .card__side--back {$/;"	c	language:css
 card	css/style.css	/^  .card:hover .card__side--front {$/;"	c	language:css
 card	css/style.css	/^.card {$/;"	c	language:css
 card	sass/components/_card.scss	/^.card {$/;"	c	language:scss
+card__details	css/style.css	/^        .card__details ul li:not(:last-child) {$/;"	c	language:css
+card__details	css/style.css	/^      .card__details ul li {$/;"	c	language:css
+card__details	css/style.css	/^    .card__details ul {$/;"	c	language:css
+card__details	css/style.css	/^  .card__details {$/;"	c	language:css
 card__heading	css/style.css	/^  .card__heading {$/;"	c	language:css
+card__heading-span	css/style.css	/^  .card__heading-span {$/;"	c	language:css
+card__heading-span--1	css/style.css	/^    .card__heading-span--1 {$/;"	c	language:css
 card__picture	css/style.css	/^  .card__picture {$/;"	c	language:css
 card__picture--1	css/style.css	/^    .card__picture--1 {$/;"	c	language:css
 card__picture--2	css/style.css	/^    .card__picture--2 {$/;"	c	language:css
@@ -44,6 +50,7 @@ col-3-of-4	sass/layout/_grid.scss	/^  .col-3-of-4 {$/;"	c	language:scss
 color-black	sass/abstracts/_variables.scss	/^$color-black: #000;$/;"	v	language:scss
 color-grey-dark	sass/abstracts/_variables.scss	/^$color-grey-dark: #777;$/;"	v	language:scss
 color-grey-light-1	sass/abstracts/_variables.scss	/^$color-grey-light-1: #f7f7f7;$/;"	v	language:scss
+color-grey-light-2	sass/abstracts/_variables.scss	/^$color-grey-light-2: #eee;$/;"	v	language:scss
 color-primary	sass/abstracts/_variables.scss	/^$color-primary: #55c57a;$/;"	v	language:scss
 color-primary-dark	sass/abstracts/_variables.scss	/^$color-primary-dark: #28b485;$/;"	v	language:scss
 color-primary-light	sass/abstracts/_variables.scss	/^$color-primary-light: #7ed56f;$/;"	v	language:scss
@@ -219,6 +226,7 @@ icon-basic-webpage-img-txt	css/icon-font.css	/^.icon-basic-webpage-img-txt:befor
 icon-basic-webpage-multiple	css/icon-font.css	/^.icon-basic-webpage-multiple:before {$/;"	c	language:css
 icon-basic-webpage-txt	css/icon-font.css	/^.icon-basic-webpage-txt:before {$/;"	c	language:css
 icon-basic-world	css/icon-font.css	/^.icon-basic-world:before {$/;"	c	language:css
+li	sass/components/_card.scss	/^      li {$/;"	t	language:scss
 paragraph	css/style.css	/^  .paragraph:not(:last-child) {$/;"	c	language:css
 paragraph	css/style.css	/^.paragraph {$/;"	c	language:css
 paragraph	sass/base/_typography.scss	/^.paragraph {$/;"	c	language:scss
@@ -249,3 +257,4 @@ u-margin-bottom-medium	css/style.css	/^.u-margin-bottom-medium {$/;"	c	language:
 u-margin-bottom-medium	sass/base/_utilities.scss	/^.u-margin-bottom-medium { margin-bottom: 4rem; }$/;"	c	language:scss
 u-margin-bottom-small	css/style.css	/^.u-margin-bottom-small {$/;"	c	language:css
 u-margin-bottom-small	sass/base/_utilities.scss	/^.u-margin-bottom-small { margin-bottom: 1.5rem; }$/;"	c	language:scss
+ul	sass/components/_card.scss	/^    ul {$/;"	t	language:scss
