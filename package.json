@@ -12,7 +12,9 @@
   "repository": "git@bitbucket.org:dschmid/natours.git",
   "author": "Daniel Schmid <daniel.schmid@libertymail.net>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "postcss": "^6.0.23"
+  },
   "devDependencies": {
     "kss": "^3.0.0-beta.18",
     "michelangelo": "^0.7.0",
