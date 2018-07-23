@@ -7,13 +7,29 @@
     "kss": "kss --config kss-config.json",
     "stylelint": "stylelint 'sass/**/*.scss'; exit 0;",
     "dev": "yarn sass && yarn kss && yarn stylelint",
-    "watch": "onchange 'sass/**/*.scss' -- yarn dev"
+    "watch": "onchange 'sass/**/*.scss' -- yarn dev",
+    "devnew": "webpack --mode development"
   },
   "repository": "git@bitbucket.org:dschmid/natours.git",
   "author": "Daniel Schmid <daniel.schmid@libertymail.net>",
   "license": "MIT",
   "dependencies": {
-    "postcss": "^6.0.23"
+    "autoprefixer": "^9.0.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "postcss": "^6.0.23",
+    "postcss-loader": "^2.1.6",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-md5-hash": "^0.0.6"
   },
   "devDependencies": {
     "kss": "^3.0.0-beta.18",
