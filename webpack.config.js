@@ -6,6 +6,17 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const KssWebpackPlugin = require('kss-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+
+const KssConfig = {
+	title: "Title of the Style Guide",
+  source: 'src/sass/',
+  destination: "dist/styleguide/",
+  builder: 'node_modules/michelangelo/kss_styleguide/custom-template/',
+  chunks: ['main']
+};
+
 
 module.exports = {
   entry: { 
@@ -13,7 +24,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: 'js/[name].[chunkhash].js'
   },
   module: {
     rules: [
@@ -59,6 +70,11 @@ module.exports = {
     new WebpackMd5Hash(),
     new CopyWebpackPlugin([
         {from:'src/img',to:'img'}
-	]), 
+		]),
+		new KssWebpackPlugin(KssConfig),
+		new StyleLintPlugin({
+			context: 'src/sass',
+			emitErrors: false
+		}),
   ]
 };
