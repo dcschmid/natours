@@ -8,9 +8,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const KssWebpackPlugin = require('kss-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const webpack = require('webpack');
 
 const KssConfig = {
-	title: "Title of the Style Guide",
+	title: "Natours Styleguide",
   source: 'src/sass/',
   destination: "dist/styleguide/",
   builder: 'node_modules/michelangelo/kss_styleguide/custom-template/',
@@ -19,18 +20,24 @@ const KssConfig = {
 
 
 module.exports = {
+	stats: 'minimal',
+
   entry: { 
-  	main: './src/sass/main.scss' 
+  	main: [
+  		'./src/sass/main.scss',
+  		'./src/js/main.js'
+  	]
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'js/[name].[chunkhash].js'
+    filename: './js/[name].js',
+    publicPath: '/'
   },
   module: {
     rules: [
      {
         test: /\.s[c|a]ss$/,
-        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
+        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'resolve-url-loader', 'sass-loader?sourceMap']
       },
        {
         test: /\.(png|jpg|gif)$/,
@@ -38,7 +45,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-            	name: 'img/[name]-[hash].[ext]',
+            	name: './img/[name].[ext]',
               limit: 5000
             }
           }
@@ -49,20 +56,29 @@ module.exports = {
         use: [{
           loader: 'file-loader',
           options: {
-              name: 'fonts/[name]-[hash].[ext]',
+              name: '[name].[ext]',
+              outputPath: './fonts/',
               mimetype: 'application/font-woff'
           }
         }]
       }
     ]
   },
+  devtool: 'source-map',
+  devServer: {
+  	contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+	  hot: true,
+	  stats: 'minimal',
+	  publicPath: '/'
+  },
   plugins: [
     new CleanWebpackPlugin('dist', {}),
     new MiniCssExtractPlugin({
-      filename: 'css/style.[contenthash].css',
+      filename: 'css/style.css',
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: true,
       hash: true,
       template: './src/index.html',
       filename: 'index.html'
@@ -71,6 +87,7 @@ module.exports = {
     new CopyWebpackPlugin([
         {from:'src/img',to:'img'}
 		]),
+		new webpack.HotModuleReplacementPlugin(),
 		new KssWebpackPlugin(KssConfig),
 		new StyleLintPlugin({
 			context: 'src/sass',
