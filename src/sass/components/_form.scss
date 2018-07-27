@@ -14,18 +14,23 @@
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
+    transition: all .3s;
 
     &:focus {
-      outline: none;
+      outline: 0;
       box-shadow: 0 1rem 2rem rgba($color-black, .1);
       border-bottom: 3px solid $color-primary;
+    }
+
+    &:required {
+      box-shadow: none;
     }
 
     &:focus:invalid {
       border-bottom: 3px solid $color-secondary-dark;
     }
 
-    &::-webkit-input-placeholder {
+    &::input-placeholder {
       color: $color-grey-dark-2;
     }
   }

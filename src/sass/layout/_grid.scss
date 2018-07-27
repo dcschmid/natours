@@ -1,8 +1,8 @@
 .row {
   @include clearfix;
 
-  margin: 0 auto;
   max-width: $grid-width;
+  margin: 0 auto;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
