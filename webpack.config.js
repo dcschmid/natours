@@ -75,10 +75,10 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin('dist', {}),
     new MiniCssExtractPlugin({
-      filename: 'css/style.css',
+      filename: 'css/style.[contenthash].css',
     }),
     new HtmlWebpackPlugin({
-      inject: true,
+      inject: false,
       hash: true,
       template: './src/index.html',
       filename: 'index.html'
