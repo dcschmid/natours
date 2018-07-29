@@ -1,11 +1,12 @@
 {
   "extends": [
   	"stylelint-config-sass-guidelines",
-  	"stylelint-config-rational-order",
-    "stylelint-a11y"
+  	"stylelint-config-rational-order"
   ],
   "rules": {
   	"order/properties-alphabetical-order": null,
-    "max-nesting-depth": 4,
+    "string-quotes": null,
+    "scss/selector-no-redundant-nesting-selector",
+    "max-nesting-depth": 4
   }
 }

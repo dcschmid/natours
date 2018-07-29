@@ -3,47 +3,37 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
-    "dev": "webpack --mode development",
-    "prod": "webpack --mode production"
+    "start": "npm-run-all --parallel liveserver watch kss stylelint",
+    "watch": "node-sass sass/main.scss css/style.css -w --source-map true",
+    "liveserver": "live-server",
+    "kss": "kss --config kss-config.json",
+    "stylelint": "stylelint 'sass/**/*.scss'; exit 0;",
+    "compile": "node-sass sass/main.scss css/style.css --source-map true",
+    "postcss": "postcss css/style.css -o css/style.css",
+    "build": "npm-run-all compile postcss kss stylelint"
   },
   "repository": "git@bitbucket.org:dschmid/natours.git",
   "author": "Daniel Schmid <daniel.schmid@libertymail.net>",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "autoprefixer": "^9.0.1",
-    "clean-webpack-plugin": "^0.1.19",
-    "copy-webpack-plugin": "^4.5.2",
-    "css-hot-loader": "^1.4.1",
-    "css-loader": "^1.0.0",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.0.4",
-    "file-loader": "^1.1.11",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "kss-webpack-plugin": "^1.3.1",
-    "mini-css-extract-plugin": "^0.4.1",
-    "node-sass": "^4.9.2",
-    "postcss": "^6.0.23",
-    "postcss-loader": "^2.1.6",
-    "resolve-url-loader": "^2.3.0",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
-    "stylelint-a11y": "^1.1.7",
-    "stylelint-webpack-plugin": "^0.10.5",
-    "url-loader": "^1.0.1",
-    "webpack": "^4.16.1",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5",
-    "webpack-md5-hash": "^0.0.6",
-    "webpack-merge": "^4.1.3"
-  },
-  "devDependencies": {
     "kss": "^3.0.0-beta.23",
+    "live-server": "^1.2.0",
     "michelangelo": "^0.7.0",
+    "node-sass": "^4.9.2",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.0",
     "stylelint": "^9.3.0",
+    "stylelint-a11y": "^1.1.7",
     "stylelint-config-rational-order": "^0.0.2",
     "stylelint-config-sass-guidelines": "^5.0.0"
-  }
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "IE 10"
+  ]
 }

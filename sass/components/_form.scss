@@ -4,22 +4,22 @@
   }
 
   &__input {
+    display: block;
+    width: 90%;
     padding: 1.5rem;
     color: inherit;
-    font-family: inherit;
     font-size: 1.5rem 2rem;
-    border-radius: 2px;
-    background-color: rgba($color-white, .5);
-    border: none;
+    font-family: inherit;
+    background-color: rgba($color-white, 0.5);
+    border: 0;
     border-bottom: 3px solid transparent;
-    width: 90%;
-    display: block;
-    transition: all .3s;
+    border-radius: 2px;
+    transition: all 0.3s;
 
     &:focus {
-      outline: 0;
-      box-shadow: 0 1rem 2rem rgba($color-black, .1);
       border-bottom: 3px solid $color-primary;
+      outline: 0;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
     }
 
     &:required {
@@ -30,23 +30,23 @@
       border-bottom: 3px solid $color-secondary-dark;
     }
 
-    &::input-placeholder {
+    &:input-placeholder {
       color: $color-grey-dark-2;
     }
   }
 
   &__label {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-left: 2rem;
-    margin-top: .7rem;
     display: block;
-    transition: all .3s;
+    margin-top: 0.7rem;
+    margin-left: 2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.3s;
   }
 
   &__input:placeholder-shown + &__label {
-    opacity: 0;
+    transform: translateY(-4rem);
     visibility: hidden;
-    tranform: translateY(-4rem);
+    opacity: 0;
   }
 }

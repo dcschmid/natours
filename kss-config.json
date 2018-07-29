@@ -1,5 +1,5 @@
 {
-  "title": "Title of the Style Guide",
+  "title": "Natours Styleguide",
   "source": "sass/",
   "destination": "styleguide/",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",

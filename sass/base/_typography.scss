@@ -8,38 +8,37 @@ body {
 }
 
 .heading-primary {
-  color: $color-white;
-  
-  backface-visibility: hidden;
   margin-bottom: 6rem;
+  color: $color-white;
   text-transform: uppercase;
+  backface-visibility: hidden;
 
   &--main {
-    animation: moveInLeft 1s ease-out;
     display: block;
-    font-size: 6rem;
     font-weight: 400;
+    font-size: 6rem;
     letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-out;
   }
 
   &--sub {
-    animation: moveInRight 1s ease-out;
     display: block;
-    font-size: 2rem;
     font-weight: 700;
+    font-size: 2rem;
     letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out;
   }
 }
 
 .heading-secondary {
-  background-clip: text;
-  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-  color: transparent;
   display: inline-block;
-  font-size: 3.5rem;
+  color: transparent;
   font-weight: 700;
+  font-size: 3.5rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  background-clip: text;
   transition: all 0.2s;
 
   &:hover {
@@ -49,8 +48,8 @@ body {
 }
 
 .heading-tertiary {
-  font-size: $default-font-size;
   font-weight: 700;
+  font-size: $default-font-size;
   text-transform: uppercase;
 }
 

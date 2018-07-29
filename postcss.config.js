@@ -2,8 +2,10 @@ module.exports = {
     plugins: [
       require('autoprefixer'),
       require('css-mqpacker'),
-      //require('cssnano')({
-      //    preset: 'default',
-      //}),
+      require('cssnano')({
+          preset: ['default', {
+            cssDeclarationSorter: false,
+          }],
+      }),
     ]
 }
