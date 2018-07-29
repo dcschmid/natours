@@ -6,7 +6,8 @@
   "rules": {
   	"order/properties-alphabetical-order": null,
     "string-quotes": null,
-    "scss/selector-no-redundant-nesting-selector",
+    "scss/selector-no-redundant-nesting-selector": null,
+    "property-no-vendor-prefix": null,
     "max-nesting-depth": 4
   }
 }
