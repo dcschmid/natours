@@ -8,12 +8,10 @@
     font-size: $default-font-size;
     text-transform: uppercase;
     text-decoration: none;
+    border: 0;
     border-radius: 10rem;
-    transition: all 0.2s;
-
-    //Change for the <button> element
-    border: none;
     cursor: pointer;
+    transition: all 0.2s;
   }
 
   &:hover {

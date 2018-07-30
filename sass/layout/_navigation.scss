@@ -7,13 +7,13 @@
     position: fixed;
     top: 6rem;
     right: 6rem;
-    background-color: $color-white;
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    width: 7rem;
+    height: 7rem;
     text-align: center;
+    background-color: $color-white;
+    border-radius: 50%;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     cursor: pointer;
   }
 
@@ -22,10 +22,10 @@
     top: 6.5rem;
     right: 6.5rem;
     z-index: 1000;
-    height: 6rem;
     width: 6rem;
-    border-radius: 50%;
+    height: 6rem;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
+    border-radius: 50%;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   }
 
@@ -33,11 +33,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
     z-index: 1500;
+    width: 0;
+    height: 100vh;
 
     opacity: 0;
-    width: 0;
 
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -47,9 +47,9 @@
     top: 50%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%, -50%);
-    list-style: none;
     text-align: center;
+    list-style: none;
+    transform: translate(-50%, -50%);
   }
 
   &__item {
@@ -57,16 +57,15 @@
   }
 
   &__link {
-
     &:link,
     &:visited {
       display: inline-block;
       padding: 1rem 2rem;
+      color: $color-white;
       font-weight: 300;
       font-size: 3rem;
-      color: $color-white;
-      text-decoration: none;
       text-transform: uppercase;
+      text-decoration: none;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
       background-size: 225%;
 
@@ -80,8 +79,8 @@
 
     &:hover,
     &:active {
-      background-position: 100%;
       color: $color-primary;
+      background-position: 100%;
       transform: translateX(1rem);
     }
   }
@@ -91,8 +90,8 @@
   }
 
   &__checkbox:checked ~ &__nav {
-    opacity: 1;
     width: 100%;
+    opacity: 1;
   }
 
   &__icon {
@@ -102,16 +101,16 @@
     &,
     &::before,
     &::after {
+      display: inline-block;
       width: 3rem;
       height: 2px;
       background-color: $color-grey-dark-3;
-      display: inline-block;
     }
 
     &::before,
     &::after {
       position: absolute;
-      left:0;
+      left: 0;
       content: "";
       transition: all 0.2s;
     }
