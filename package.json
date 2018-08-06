@@ -37,8 +37,6 @@
     "stylelint-config-sass-guidelines": "^5.0.0"
   },
   "browserslist": [
-    "last 2 version",
-    "> 1%",
-    "IE 10"
+    "last 20 version"
   ]
 }
