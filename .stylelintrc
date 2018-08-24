@@ -8,6 +8,7 @@
     "string-quotes": null,
     "scss/selector-no-redundant-nesting-selector": null,
     "property-no-vendor-prefix": null,
+    "media-feature-name-no-vendor-prefix": null,
     "max-nesting-depth": 4
   }
 }

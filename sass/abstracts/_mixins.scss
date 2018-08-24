@@ -1,3 +1,10 @@
+// @include clearfix
+//
+// Compatibility untested.
+//
+// A simple mixin for clearfix
+//
+// Style guide: Mixins.clearfix
 @mixin clearfix {
   &::after {
     display: table;
@@ -6,6 +13,12 @@
   }
 }
 
+
+// @include abs-center
+//
+// A mixin to center elements
+//
+// Style guide: Mixins.abs-center
 @mixin abs-center {
   position: absolute;
   top: 50%;
@@ -13,24 +26,20 @@
   transform: translate(-50%, -50%);
 }
 
-//Media Query Manager
-/*
- * 0 - 600px:       Phone
- * 600px - 900px:   Tablet portrait
- * 900px - 1200px:  Tablet landscape
- * [1200px-1800px]: is where our normal styles apply
- * 1800px +:        Big Desktop
- *
- * $breakpoint argument choices:
- * - phone
- * - tab-port
- * - tab-land
- * - big-desktop
- *
- * Order: Base + typography > general layout + grid > page layout > components
- *
- * 1em = 16px
- */
+
+// @include respond($breakpoint) { ... }
+//
+// A Media Query Manager mixin
+//
+// $breakpoint argument choices:
+// - phone -- 0 - 600px
+// - tab-port -- 600px - 900px
+// - tab-land -- 900px - 1200px
+// - [1200px-1800px]: is where our normal styles apply
+// - big-desktop -- 1800px +
+//
+// Style guide: Mixins.media-query-manager
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content; };   //600px

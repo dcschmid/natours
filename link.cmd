@@ -1,0 +1,1 @@
+doskey stylelint=.\node_modules\.bin\stylelint "sass/**/*.scss" $*

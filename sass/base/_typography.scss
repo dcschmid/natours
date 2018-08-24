@@ -1,9 +1,28 @@
+// Typography
+//
+// All defined typography
+//
+// Style guide: Typography
 body {
   color: $color-grey-dark;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
   line-height: 1.7;
 }
+
+// Primary headline
+//
+// Markup:
+// <div class="bg-dark u-center-text">
+//     <h1 class="heading-primary">
+//         <span class="{{modifier_class}}">Outdoors</span>
+//     </h1>
+// </div>
+//
+// .heading-primary--main - Main Headline
+// .heading-primary--sub - Small Headline
+//
+// Style guide: Typography.heading-primary
 
 .heading-primary {
   margin-bottom: 6rem;
@@ -36,6 +55,19 @@ body {
     }
   }
 }
+
+// Secondary headline
+//
+// Markup:
+// <div class="u-center-text">
+//     <h2 class="heading-secondary {{modifier_class}}">
+//         Exciting tours
+//     </h2>
+// </div>
+//
+// :hover - hover state
+//
+// Style guide: Typography.heading-secondary
 
 .heading-secondary {
   display: inline-block;
