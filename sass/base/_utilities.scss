@@ -1,7 +1,39 @@
+// Utilities Classes
+//
+// All defined utilities classes
+//
+// Styleguide: Base.utilitites
+
+
+// Center Text
+//
+// Markup:
+// <div class="u-center-text">
+//     Center this text
+// </div>
+//
+// Styleguide: Base.utilitites.center-text
 .u-center-text { text-align: center; }
 
+// Margin bottom small
+//
+// Markup:
+// <div class="u-margin-bottom-small">
+//     Set a margin bottom of 1.5rem
+// </div>
+//
+// Styleguide: Base.utilitites.margin-bottom-small
 .u-margin-bottom-small { margin-bottom: 1.5rem; }
 
+
+// Margin bottom medium
+//
+// Markup:
+// <div class="u-margin-bottom-medium">
+//     Set a margin bottom of 4rem
+// </div>
+//
+// Styleguide: Base.utilitites.margin-bottom-medium
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
 
@@ -10,6 +42,14 @@
   }
 }
 
+// Margin bottom big
+//
+// Markup:
+// <div class="u-margin-bottom-big">
+//     Set a margin bottom of 8rem
+// </div>
+//
+// Styleguide: Base.utilitites.margin-bottom-big
 .u-margin-bottom-big {
   margin-bottom: 8rem;
 
@@ -18,6 +58,23 @@
   }
 }
 
+// Margin top big
+//
+// Markup:
+// <div class="u-margin-top-big">
+//     Set a margin top of 8rem
+// </div>
+//
+// Styleguide: Base.utilitites.margin-top-big
 .u-margin-top-big { margin-top: 8rem; }
+
+// Margin top huge
+//
+// Markup:
+// <div class="u-margin-top-huge">
+//     Set a margin top of 10rem
+// </div>
+//
+// Styleguide: Base.utilitites.margin-top-big
 .u-margin-top-huge { margin-top: 10rem; }
 

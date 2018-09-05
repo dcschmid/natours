@@ -1,10 +1,15 @@
-// @include clearfix
+
+// Mixins
 //
-// Compatibility untested.
+// Styleguide: Abstracts.Mixins
+
+
+// Clearfix
 //
 // A simple mixin for clearfix
+// Use @include clearfix
 //
-// Style guide: Mixins.clearfix
+// Styleguide: Abstracts.Mixins.clearfix
 @mixin clearfix {
   &::after {
     display: table;
@@ -14,11 +19,12 @@
 }
 
 
-// @include abs-center
+// abs-center
 //
-// A mixin to center elements
+// A mixin to center absolute elements 
+// Use @include abs-center
 //
-// Style guide: Mixins.abs-center
+// Styleguide: Abstracts.Mixins.abs-center
 @mixin abs-center {
   position: absolute;
   top: 50%;
@@ -27,9 +33,7 @@
 }
 
 
-// @include respond($breakpoint) { ... }
-//
-// A Media Query Manager mixin
+// Media Query Manager
 //
 // $breakpoint argument choices:
 // - phone -- 0 - 600px
@@ -38,7 +42,9 @@
 // - [1200px-1800px]: is where our normal styles apply
 // - big-desktop -- 1800px +
 //
-// Style guide: Mixins.media-query-manager
+// Use @include respond($breakpoint) { ... }
+//
+// Style guide: Abstracts.Mixins.media-query-manager
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {

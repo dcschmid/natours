@@ -1,3 +1,16 @@
+// Button
+//
+// Markup:
+// <button class="btn {{modifier_class}}">Next step &rarr;</button>
+// 
+// :hover - hover state
+// :active - active state
+// .btn--green - green button
+// .btn--white - white button
+// .btn--animated - button with animation
+//
+// Styleguide: Components.button
+
 .btn {
   &,
   &:link,
@@ -24,7 +37,7 @@
     }
   }
 
-  &:activ,
+  &:active,
   &:focus {
     outline: none;
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
@@ -68,6 +81,16 @@
     animation-fill-mode: backwards;
   }
 }
+
+// Text Button
+//
+// Markup:
+// <a href="#" class="btn-text {{modifier_class}}">Read all stories &rarr;</a>
+// 
+// :hover -  hover state
+// :active - active state
+//
+// Styleguide: Components.button-text
 
 .btn-text {
   &:link,

@@ -2,7 +2,7 @@
 //
 // All defined typography
 //
-// Style guide: Typography
+// Styleguide: Base.Typography
 body {
   color: $color-grey-dark;
   font-weight: 400;
@@ -22,7 +22,7 @@ body {
 // .heading-primary--main - Main Headline
 // .heading-primary--sub - Small Headline
 //
-// Style guide: Typography.heading-primary
+// Styleguide: Base.Typography.heading-primary
 
 .heading-primary {
   margin-bottom: 6rem;
@@ -67,7 +67,7 @@ body {
 //
 // :hover - hover state
 //
-// Style guide: Typography.heading-secondary
+// Styleguide: Base.Typography.heading-secondary
 
 .heading-secondary {
   display: inline-block;
@@ -95,12 +95,31 @@ body {
   }
 }
 
+// Tertiary headline
+//
+// Markup:
+// <div class="u-center-text">
+//     <h3 class="heading-tertiary {{modifier_class}}">
+//         Exciting tours
+//     </h3>
+// </div>
+//
+// Styleguide: Base.Typography.heading-tertiary
 .heading-tertiary {
   font-weight: 700;
   font-size: $default-font-size;
   text-transform: uppercase;
 }
 
+
+// Paragraph
+//
+// Markup:
+// <p class="paragraph">
+//     Loremn ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis in, officiis ea quae assumenda ipsam dolores tempore illo ullam odit natus sed rem distinctio atque mollitia. Illo est accusamus laboriosam.
+// </p>
+//
+// Styleguide: Base.Typography.paragraph
 .paragraph {
   font-size: $default-font-size;
 
