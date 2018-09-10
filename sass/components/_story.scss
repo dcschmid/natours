@@ -1,3 +1,26 @@
+// Story
+//
+// Markup:
+//<div class="row">
+//  <div class="story {{modifier_class}}">
+//      <figure class="story__shape">
+//          <img src="/img/nat-8.jpg" alt="Peron on a tour" class="story__img">
+//          <figcaption class="story__caption">Mary Smith</figcaption>
+//      </figure>
+//      <div class="story__text">
+//          <h3 class="heading-tertiary u-margin-bottom-small">
+//              I had the best week ever with my family
+//          </h3>
+//          <p>
+//              Loremn ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis in, officiis ea quae assumenda ipsam dolores tempore illo ullam odit natus sed rem distinctio atque mollitia. Illo est accusamus laboriosam. Loremn ipsum dolor sit amet, consectetur adipisicing elit.
+//          </p>
+//      </div>
+//  </div>
+//</div>
+//
+// :hover - hover state
+//
+// Styleguide: Components.story
 .story {
   width: 75%;
   margin: 0 auto;
