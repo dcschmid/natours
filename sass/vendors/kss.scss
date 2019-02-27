@@ -1,0 +1,50 @@
+.kss-body {
+  font-size: 16px;
+}
+
+.u-zindex-0 {
+  z-index: 0;
+}
+
+.bg-dark {
+  background-color: #333;
+}
+
+.bg-green {
+  background: $color-primary-light;
+}
+
+.kss-nav__item a {
+  font-size: 1em;
+}
+
+.kss-nav__subnav .kss-nav__item a {
+  font-size: 0.875em;
+}
+
+.kss-title {
+  font-size: 1.5em;
+}
+
+.kss-section__source {
+  font-size: 0.875em;
+}
+
+.kss-section__description ol,
+.kss-section__description ul,
+.kss-section__description p {
+  font-size: 1em;
+}
+
+.kss-color__var,
+.kss-color__code {
+  font-size: 1.25em;
+}
+
+.kss-modifiers__name {
+  font-size: 1em;
+}
+
+.kss-modifiers__heading {
+  font-size: 1.125em;
+}
