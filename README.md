@@ -1,4 +1,4 @@
-# natours
+# Natours
 
 It's an example layout build with SCSS and HTML5, based on the Udemy course from Jonas Schmedtmann
 
